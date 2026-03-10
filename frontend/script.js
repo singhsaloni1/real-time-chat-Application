@@ -25,7 +25,7 @@ if(document.getElementById("sendBtn")){
   const username = localStorage.getItem("username");
   document.getElementById("user").innerText = username;
 
-  const ws = new WebSocket("ws://localhost:3000");
+ const ws = new WebSocket("wss://real-time-chat-application-4-ebbp.onrender.com");
   let currentRoom = null;
   let currentChatUser = null;
 
